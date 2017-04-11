@@ -124,17 +124,19 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
     }
     
     func controllerWillChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
-        
+        //implementation of this causes FRC bugs
         //tableView.beginUpdates()
         
     }
     
     func controllerDidChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
-        
+        //quick fix to stop app crashes and bugs, constantly reload table view
         tableView.reloadData()
+        //implemtation of this causes FRC bugs
         //tableView.endUpdates()
     }
     
+    //Implementation of this causes app crashes and bugs, will fix once I know whats wrong lol
     //    func controller(_ controller: NSFetchedResultsController<NSFetchRequestResult>, didChange anObject: Any, at indexPath: IndexPath?, for type: NSFetchedResultsChangeType, newIndexPath: IndexPath?) {
     //
     //        switch(type) {
