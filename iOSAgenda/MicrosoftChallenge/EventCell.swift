@@ -30,7 +30,8 @@ class EventCell: UITableViewCell {
         
         dateComponentsFormatter.maximumUnitCount = 1
         dateComponentsFormatter.unitsStyle = .full
-
+        
+        //if event has date attribute, calculate time until date
         if let date: Date = event.fullDate as Date? {
             timeUntilEvent.text = dateComponentsFormatter.string(from: Date(), to: date)
         } else {
@@ -52,13 +53,9 @@ class EventCell: UITableViewCell {
         }
         
         title.text = event.title
-        
         eventTime.text = event.time
-        
         location.text = event.location
-        
-        thumbImg.image = event.toImage?.image as? UIImage
-        
+        thumbImg.image = event.toImage?.image as? UIImage    
     }
 
 }
