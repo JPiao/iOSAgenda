@@ -1,4 +1,4 @@
-//File from Mark Price at Devslopes.com
+//Styling by Mark Price at Devslopes.com
 
 
 import UIKit
