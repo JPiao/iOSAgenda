@@ -3,5 +3,5 @@
 
 
 <p align="left">
-<img src="https://github.com/JPiao/iOSAgenda/blob/master/images/IMG_6411%202.PNG?height="200, width= 100"/>
+<img src="https://github.com/JPiao/iOSAgenda/blob/master/images/IMG_6411%202.PNG?height="400, width= 250"/>
 </p>
