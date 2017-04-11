@@ -11,7 +11,6 @@ import CoreData
 
 class DetailsVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate {
     
-    
     @IBOutlet weak var image: UIImageView!
     
     @IBOutlet weak var titleTextField: CustomTextField!
@@ -98,9 +97,7 @@ class DetailsVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource,
         }
         
         event.toImage = pic
-
         event.tag = _tags[tagPicker.selectedRow(inComponent: 0)]
-        
         
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "MMMM dd, YYYY HH:mm"
