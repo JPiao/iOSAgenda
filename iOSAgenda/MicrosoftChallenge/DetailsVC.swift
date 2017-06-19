@@ -33,7 +33,6 @@ class DetailsVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource,
     
     var imgPicker: UIImagePickerController!
     
- 
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -53,13 +52,11 @@ class DetailsVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource,
 
         imgPicker = UIImagePickerController()
         imgPicker.delegate = self
- 
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         let tag = _tags[row]
         return tag
-        
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
@@ -68,7 +65,6 @@ class DetailsVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource,
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
-        
     }
     
     @IBAction func saveBtnPressed(_ sender: UIButton) {
@@ -151,7 +147,6 @@ class DetailsVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource,
         _ = navigationController?.popViewController(animated: true)
     }
     
-    
     @IBAction func imgBtnPressed(_ sender: UIButton) {
         present(imgPicker, animated: true, completion: nil)
     }
@@ -177,5 +172,4 @@ class DetailsVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource,
         
         return true
     }
-
 }
