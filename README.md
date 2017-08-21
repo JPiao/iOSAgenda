@@ -1,5 +1,4 @@
 # iOS Agenda
-# Microsoft Outlook Aesthetic
 
 Sort by tag, can see how much time left until an event, etc.
 
